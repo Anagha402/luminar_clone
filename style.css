@@ -80,6 +80,8 @@ header img{
     width: 1000px;
     border-color: transparent;
     border-bottom: 2px solid rgb(179, 176, 176);
+    outline:none;
+    /* to remove black focus border of input textarea */
 }
 
 
@@ -88,22 +90,97 @@ header img{
     display: flex;
     justify-content: center; 
     
-    height: 730px;
+    height: 770px;
     margin-top: 100px;
+    
 }
 .name{
-    height: 700px;
-    width: 300px;
-    background-color: #e0e0e0;
+    height: 740px;
+    width: 310px;
+    background-color: #f4f2f2;
     margin: 5px;
 }
+
+/* hover section */
+.name:hover{
+    
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    background-color: white;
+
+  
+}
+.name:hover .oval{
+    background-color:rgb(106, 16, 106);
+    scale:1.05;
+    
+}
+.name:hover .oval img{
+    filter:brightness(0) invert(1); 
+    /* Makes the image white */
+
+}
+.name:hover .view-btn{
+    background-color: rgb(106, 16, 106);
+    color: white;
+}
+.oval{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(228, 227, 227);
+    margin-top: 35px;
+    margin-left: 80px;
+    
+    height: 130px;
+    border-radius: 80px;
+    width: 145px;
+    
+}
+
+ 
+
+#figure{
+    padding: 30px;
+
+}
+#heading{
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(106, 16, 106);
+    padding: 10px;
+}
+#para{
+    padding: 20px;
+}
+#next{
+    font-weight: 900;
+    font-size: 17px;
+    margin-left: 20px;
+    color: rgb(106, 16, 106);
+}
+.view-btn{
+    height: 50px;
+    width: 150px;
+    
+    border-radius: 40px;
+    background-color: #e0e0e0;
+    color:rgb(106, 16, 106);
+    border: 2px solid rgb(106, 16, 106);
+    
+    
+    font-size: medium;
+    font-weight: 600;
+    margin-left: 70px;
+}
+
+
+
 /* row 5 */
 
 .course-2{
     display: flex;
     justify-content: center;
     
-    height: 730px;
+    height: 770px;
     
 }
 /* row 6 */
@@ -111,7 +188,7 @@ header img{
     display: flex;
     
     
-    height: 730px;
+    height: 850px;
     
 }
 /* row 7-why luminar  */
